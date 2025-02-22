@@ -1,7 +1,9 @@
-# Hugo Pereira's resume
+# Hénoc MUKUMBI's Resume
 
 > This repository hosts my LaTeX resume.
 
-A Github Action automatically compiles the LaTeX and publishes the new PDF on the GitHub Page: [PDF Resume](https://tigrou23.github.io/resume).
+A GitHub Action automatically compiles the LaTeX file and publishes the latest PDF on GitHub Pages: [PDF Resume](https://Hezuko.github.io/resume).
 
-Please refer to my profile for all information: [GitHub](https://github.com/tigrou23).
+For more information, please visit my profile: [GitHub](https://github.com/Hezuko).
+
+Special thanks to Hugo Pereira: [GitHub](https://github.com/tigrou23).
