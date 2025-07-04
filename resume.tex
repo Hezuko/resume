@@ -1,21 +1,14 @@
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%	PACKAGES AND CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[
-	10pt,
-]{style} % Use the style class
+\documentclass[10pt]{style}
 
 \usepackage{ebgaramond}
-\usepackage{hyperref} % Use the EB Garamond font
-
-%------------------------------------------------
+\usepackage{hyperref}
 
 \name{Hénoc MUKUMBI}
-
-\address{(+33) 7~$\cdot$~67~$\cdot$~17~$\cdot$~82~$\cdot$~93 \\ \texttt{h.mukumbi100@gmail.com}} % Contact information
-
-%----------------------------------------------------------------------------------------
+\address{(+33) 7~$\cdot$~67~$\cdot$~17~$\cdot$~82~$\cdot$~93 \\ \texttt{h.mukumbi100@gmail.com}}
 
 \begin{document}
 
@@ -24,82 +17,86 @@
 \end{center}
 
 \begin{center}
-	\textbf{Graduating student in 2026 from Université de Technologie de Compiegne.}
+	\textbf{Student at ENSEA, expected to graduate in 2027 or 2028.}
 \end{center}
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+%	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
 
-	\begin{rSubsection}{LGM Ingénierie}{January 2025 - Present}{Apprenticeship - Full-Stack Web Developer}{Vélizy-Villacoublay, France}
-		\item Designed and developed a web application to generate validation reports for automotive Electronic Control Units (ECUs), replacing a previous third-party solution. The application was built using Python (Django), HTML, CSS (Bootstrap), JavaScript, and HTMX.
-		\item Collaborated with the software development team, working closely with the validation service lead to define weekly objectives and align with project specifications.
+	\begin{rSubsection}{LGM Ingénierie}{Jan 2025 - Present}{Apprenticeship - Full-Stack Web Developer}{Vélizy-Villacoublay}
+		\item Designed and developed a web application to generate automotive ECU validation reports (Python/Django, HTMX, Bootstrap).
+		\item Integrated user feedback, improved UX, and reduced report generation time by automating data processing.
+		\item Collaborated closely with validation and software teams to align technical objectives with project milestones.
 	\end{rSubsection}
 
-%------------------------------------------------
-
-	\begin{rSubsection}{LGM Ingénierie}{August 2024 - January 2025}{Apprenticeship - Automotive Validation Engineer}{Vélizy-Villacoublay, France}
-		\item Conducted validation testing on automotive ECUs, focusing on lifecycle phases and physical layers based on Stellantis requirements.
-		\item Developed expertise in CAN and LIN protocols, analyzing their applications in vehicle communication networks.
-		\item Utilized tools such as CANoe, oscilloscopes, multimeters, and CAN disturbance modules to assess ECU performance and compliance.
-		\item Improved test planning and execution efficiency, optimizing workflow to meet project deadlines.
+	\begin{rSubsection}{LGM Ingénierie}{Aug 2024 - Jan 2025}{Apprenticeship - Automotive Validation Engineer}{Vélizy-Villacoublay}
+		\item Conducted validation and compliance testing on automotive ECUs, focusing on physical layer (CAN, LIN).
+		\item Used CANoe, oscilloscopes, and disturbance modules to verify communication robustness and electrical performance.
+		\item Improved test documentation and analysis, helping to optimize validation workflows and meet tight deadlines.
 	\end{rSubsection}
 
-
-%------------------------------------------------
-
-	\begin{rSubsection}{LGM Ingénierie}{August 2023 - July 2024}{Apprenticeship - Software Test Engineer}{Vélizy-Villacoublay, France}
-		\item Performed unit testing on OCEAN software modules, a communication framework ensuring reliable data exchange between automotive ECUs.
-		\item Conducted on-target unit tests to validate software functionality in real-world conditions.
-		\item Reviewed code compliance with LGM Ingénierie standards ensuring quality and robustness.
+	\begin{rSubsection}{LGM Ingénierie}{Aug 2023 - Jul 2024}{Apprenticeship - Software Test Engineer}{Vélizy-Villacoublay}
+		\item Performed unit and on-target testing of OCEAN software modules to ensure compliance with safety and quality standards.
+		\item Reviewed and improved test cases, contributing to higher software reliability and better code coverage.
 	\end{rSubsection}
 
-%------------------------------------------------
-
-	\begin{rSubsection}{CNRS - Université Paris Cité}{April 2023 - June 2023}{Internship - Embedded Electronics and Systems Technician}{Paris, France}
-		\item Designed and debugged PCBs using Ultiboard integrating temperature sensors for clean room monitoring.
-		\item Implemented a Si4432 RF for wireless data transmission.
-		\item Migrated firmware from ATmega328P to PIC18F26J11 optimizing the temperature regulation system in C/C++.
+	\begin{rSubsection}{CNRS - Université Paris Cité}{Apr 2023 - Jun 2023}{Internship - Embedded Systems Technician}{Paris}
+		\item Designed and debugged PCBs integrating temperature sensors for clean room monitoring and control.
+		\item Migrated firmware from ATmega328P to PIC18F26J11 in C/C++, optimizing temperature regulation and RF transmission with Si4432 modules.
 	\end{rSubsection}
 
 \end{rSection}
 
+
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	EDUCATION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 
-	\textbf{Université de Technologie de Compiègne (UTC) - Sorbonne} \hfill \textit{June 2026} \\
-	Master in Computer Science \\
-	Specializing in Embedded Computing and Autonomous Systems
+    \textbf{ENSEA} \hfill \textit{Expected June 2027 or 2028} \\
+	Master in Electronics and Industrial Computer Science — Embedded Systems
 
-	\textbf{Université Paris-Saclay IUT de Cachan} \hfill \textit{June 2023} \\
-	Associate's Degree in Electrical Engineering and Industrial Computing \\
-	Average : 15.0/20
+
+    \textbf{Université de Technologie de Compiègne (UTC)} \hfill \textit{2023--2025} \\
+    Coursework towards Master in Computer Science
+
+    \textbf{Université Paris-Saclay IUT de Cachan} \hfill \textit{June 2023} \\
+    Associate's Degree in Electrical Engineering and Industrial Computing (Avg. 15.0/20)
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
+%	TECHNICAL STRENGTHS
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Technical Strengths}
 
-	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		Computer Languages & C, C++, Python, VHDL, JavaScript, HTML, CSS \\
-		Embedded Systems & ARM Mbed, Arduino, Raspberry Pi, Microchip PIC \\
-		Communication Protocols & SPI, I2C, Ethernet, CAN Bus, LIN Bus, RS232, UART \\
-		PCB Design \& CAD & KiCad, Ultiboard, Altium Designer, SolidWorks \\
-		Web Technologies & Node.js, Express.js, Django, Flask \\
-		Databases & PostgreSQL, SQLite \\
-		Operating Systems & Windows, macOS, Ubuntu \\
-		Workflow \& Tools & Git, GitHub, GitLab \\
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{5ex}} l @{}}
+		Languages & C, C++, Python, VHDL, JS, HTML, CSS \\
+		Embedded & ARM Mbed, Arduino, Raspberry Pi, PIC \\
+		Protocols & SPI, I2C, Ethernet, CAN, LIN, UART \\
+		PCB \& CAD & KiCad, Ultiboard, Altium, SolidWorks \\
+		Web & Node.js, Express.js, Django, Flask \\
+		DB \& OS & PostgreSQL, SQLite, Windows, macOS, Ubuntu \\
+		Tools & Git, GitHub, GitLab \\
 	\end{tabular}
-	
 
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	HOBBIES & INTERESTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Hobbies \& Interests}
+
+    Designing and building a custom drone, including 3D CAD design on SolidWorks, PCB design on KiCad, and embedded software development using Eclipse. \\
+    Passionate about athletics and physical activities: running, strength training, and Muay Thai (combat sports).
+
+\end{rSection}
+
 
 \end{document}
