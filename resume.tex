@@ -1,102 +1,132 @@
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND CONFIGURATIONS
+%  PAQUETS ET CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[10pt]{style}
 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{ebgaramond}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{microtype} % meilleure césure, gain de lignes
 
-\name{Hénoc MUKUMBI}
-\address{(+33) 7~$\cdot$~67~$\cdot$~17~$\cdot$~82~$\cdot$~93 \\ \texttt{h.mukumbi100@gmail.com}}
+% -- serrer un peu les marges par-dessus la classe (juste ce qu'il faut)
+\usepackage{geometry}
+\geometry{
+  top=0.55in, bottom=0.55in,
+  left=0.70in, right=0.70in
+}
+
+% -- tableaux plus compacts (compétences)
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.95}
 
 \begin{document}
 
+%----------------------------------------------------------------------------------------
+%  EN-TÊTE : PHOTO À GAUCHE, TEXTE CENTRÉ DANS LE BLOC DE DROITE (compact)
+%----------------------------------------------------------------------------------------
 \begin{center}
-	\url{https://www.linkedin.com/in/henocmukumbi/}
+  \begin{minipage}[c]{0.18\textwidth}
+    \includegraphics[width=\linewidth,height=30mm,keepaspectratio]{photo.jpg}% 30mm au lieu de 34mm
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.78\textwidth}
+    \centering
+    {\LARGE\bfseries Hénoc MUKUMBI}\\[-0.2em]
+    \small (+33) 7\,67\,17\,82\,93 \quad\textbullet\quad \texttt{h.mukumbi100@gmail.com} \quad\textbullet\quad
+    119 avenue du Général Leclerc, 78220 Viroflay\\[-0.1em]
+    \normalsize \textbf{Étudiant en Systèmes Embarqués à l’ESIEE Paris — Recherche apprentissage 3 ans (Diplôme 2028).}
+  \end{minipage}
 \end{center}
 
-\begin{center}
-	\textbf{Student at ENSEA, expected to graduate in 2027 or 2028.}
-\end{center}
+% \vspace{0.8em}  % <-- supprimé pour gagner de l’espace
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
+%  EXPÉRIENCE PROFESSIONNELLE
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\begin{rSection}{Expérience}
 
-	\begin{rSubsection}{LGM Ingénierie}{Jan 2025 - Present}{Apprenticeship - Full-Stack Web Developer}{Vélizy-Villacoublay}
-		\item Designed and developed a web application to generate automotive ECU validation reports (Python/Django, HTMX, Bootstrap).
-		\item Integrated user feedback, improved UX, and reduced report generation time by automating data processing.
-		\item Collaborated closely with validation and software teams to align technical objectives with project milestones.
-	\end{rSubsection}
+  \begin{rSubsection}{LGM Ingénierie}{Août 2023 -- Août 2025}{Apprenti Développeur en Systèmes Embarqués}{Vélizy-Villacoublay}
+    \item Validation et tests couche physique sur calculateurs automobile (CAN, LIN) avec CANoe, oscilloscopes et modules de perturbation.
+    \item Intégration et débogage de logiciels embarqués (Eclipse, IBM Rational Test RealTime).
+    \item Développement et exécution de tests unitaires et sur cible en C pour des composants critiques en temps réel.
+    \item Utilisation de Fork pour la gestion de versions et le développement collaboratif en environnements de validation.
+    \item Interface web interne (Python/Django/SQL) pour automatiser les rapports, réduire le temps d’analyse et améliorer la traçabilité.
+    \item Collaboration interdisciplinaire (logiciel, validation, qualité) pour atteindre les jalons et garantir la conformité.
+  \end{rSubsection}
 
-	\begin{rSubsection}{LGM Ingénierie}{Aug 2024 - Jan 2025}{Apprenticeship - Automotive Validation Engineer}{Vélizy-Villacoublay}
-		\item Conducted validation and compliance testing on automotive ECUs, focusing on physical layer (CAN, LIN).
-		\item Used CANoe, oscilloscopes, and disturbance modules to verify communication robustness and electrical performance.
-		\item Improved test documentation and analysis, helping to optimize validation workflows and meet tight deadlines.
-	\end{rSubsection}
-
-	\begin{rSubsection}{LGM Ingénierie}{Aug 2023 - Jul 2024}{Apprenticeship - Software Test Engineer}{Vélizy-Villacoublay}
-		\item Performed unit and on-target testing of OCEAN software modules to ensure compliance with safety and quality standards.
-		\item Reviewed and improved test cases, contributing to higher software reliability and better code coverage.
-	\end{rSubsection}
-
-	\begin{rSubsection}{CNRS - Université Paris Cité}{Apr 2023 - Jun 2023}{Internship - Embedded Systems Technician}{Paris}
-		\item Designed and debugged PCBs integrating temperature sensors for clean room monitoring and control.
-		\item Migrated firmware from ATmega328P to PIC18F26J11 in C/C++, optimizing temperature regulation and RF transmission with Si4432 modules.
-	\end{rSubsection}
-
-\end{rSection}
-
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-    \textbf{ENSEA} \hfill \textit{Expected June 2027 or 2028} \\
-	Master in Electronics and Industrial Computer Science — Embedded Systems
-
-
-    \textbf{Université de Technologie de Compiègne (UTC)} \hfill \textit{2023--2025} \\
-    Coursework towards Master in Computer Science
-
-    \textbf{Université Paris-Saclay IUT de Cachan} \hfill \textit{June 2023} \\
-    Associate's Degree in Electrical Engineering and Industrial Computing (Avg. 15.0/20)
+  \begin{rSubsection}{CNRS -- Université Paris Cité}{Avril 2023 -- Juin 2023}{Stagiaire Technicien Systèmes Embarqués et Électronique}{Paris}
+    \item Conception et routage de circuits imprimés (Ultiboard) pour instrumentation (contrôle de température, salle blanche).
+    \item Assemblage, câblage et débogage de cartes ; intégration et calibration de capteurs de température.
+    \item Développement et migration de firmware embarqué en C/C++ sur PIC18F26J11 pour la régulation en temps réel.
+    \item Réalisation et test d’une liaison RF avec modules Si4432.
+  \end{rSubsection}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS
+%  FORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Strengths}
+\begin{rSection}{Formation}
 
-	\begin{tabular}{@{} >{\bfseries}l @{\hspace{5ex}} l @{}}
-		Languages & C, C++, Python, VHDL, JS, HTML, CSS \\
-		Embedded & ARM Mbed, Arduino, Raspberry Pi, PIC \\
-		Protocols & SPI, I2C, Ethernet, CAN, LIN, UART \\
-		PCB \& CAD & KiCad, Ultiboard, Altium, SolidWorks \\
-		Web & Node.js, Express.js, Django, Flask \\
-		DB \& OS & PostgreSQL, SQLite, Windows, macOS, Ubuntu \\
-		Tools & Git, GitHub, GitLab \\
-	\end{tabular}
+  \textbf{ESIEE Paris} \hfill \textit{2025--2028} \\
+  Diplôme d’ingénieur — Systèmes Embarqués
+
+  \textbf{Université de Technologie de Compiègne (UTC)} \hfill \textit{2023--2025} \\
+  Licence en Informatique
+
+  \textbf{Université Paris-Saclay — IUT de Cachan} \hfill \textit{2021--2023} \\
+  DUT Génie Électrique et Informatique Industrielle
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	HOBBIES & INTERESTS
+%  COMPÉTENCES TECHNIQUES
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Hobbies \& Interests}
+\begin{rSection}{Compétences Techniques}
 
-    Designing and building a custom drone, including 3D CAD design on SolidWorks, PCB design on KiCad, and embedded software development using Eclipse. \\
-    Passionate about athletics and physical activities: running, strength training, and Muay Thai (combat sports).
+  \begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l @{}}
+    Langages & C, C++, Python, VHDL, JavaScript, HTML/CSS, SQL \\
+    Embarqué & ARM Mbed, Arduino, Raspberry Pi, PIC \\
+    Protocoles & SPI, I2C, CAN, UART, Ethernet \\
+    PCB \& CAO & KiCad, Ultiboard, Altium, SolidWorks \\
+    Réseaux & TCP/IP, routage, firewall, LAN/WAN, sockets \\
+    BD \& OS & PostgreSQL, SQLite, Windows, macOS, Ubuntu \\
+    Outils & Git, GitHub, GitLab, Eclipse, LabVIEW, Matlab \\
+  \end{tabular}
 
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+%  PROJETS PERSONNELS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Réalisations}
+
+  \begin{rSubsection}{Drone aérien personnalisé}{2025 - Présent}{}{}
+    \item Étude et analyse des schémas électroniques (alimentation, étage de puissance, communication) pour garantir la fiabilité et la sécurité du système.
+    \item Conception mécanique (SolidWorks, impression 3D) et intégration structurelle optimisée.
+    \item Conception électronique complète : ESC basé sur TI F280025PMS, carte de contrôle de vol conçue sous KiCad.
+    \item Intégration multi-capteurs (IMU, capteurs environnementaux, capteur optique) et développement logiciel embarqué en C++ (protocoles SPI, I2C, UART).
+    \item Validation par simulations et tests sur prototype pour assurer robustesse et performances en conditions réelles.
+  \end{rSubsection}
+
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%  LANGUES
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Langues}
+  Français — Langue maternelle \quad|\quad Anglais — Niveau professionnel
+\end{rSection}
+
+\enlargethispage{\baselineskip}
 
 \end{document}
