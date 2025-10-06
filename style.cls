@@ -18,10 +18,10 @@
 %----------------------------------------------------------------------------------------
 \usepackage{geometry}
 \geometry{
-  top=0.6in,
-  bottom=0.6in,
-  left=0.75in,
-  right=0.75in,
+  top=0.3in,
+  bottom=0.3in,
+  left=0.3in,
+  right=0.3in,
   %showframe,
 }
 

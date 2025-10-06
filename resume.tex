@@ -1,5 +1,5 @@
 %----------------------------------------------------------------------------------------
-%  PAQUETS ET CONFIGURATIONS
+%  PACKAGES & SETTINGS
 %----------------------------------------------------------------------------------------
 
 \documentclass[10pt]{style}
@@ -9,124 +9,107 @@
 \usepackage{ebgaramond}
 \usepackage{hyperref}
 \usepackage{graphicx}
-\usepackage{microtype} % meilleure césure, gain de lignes
-
-% -- serrer un peu les marges par-dessus la classe (juste ce qu'il faut)
+\usepackage[protrusion=true,expansion=false]{microtype}
 \usepackage{geometry}
-\geometry{
-  top=0.55in, bottom=0.55in,
-  left=0.70in, right=0.70in
-}
 
-% -- tableaux plus compacts (compétences)
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{0.95}
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{0.9}
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%  EN-TÊTE : PHOTO À GAUCHE, TEXTE CENTRÉ DANS LE BLOC DE DROITE (compact)
+%  HEADER
 %----------------------------------------------------------------------------------------
 \begin{center}
-  \begin{minipage}[c]{0.18\textwidth}
-    \includegraphics[width=\linewidth,height=30mm,keepaspectratio]{photo.jpg}% 30mm au lieu de 34mm
+  \begin{minipage}[c]{0.20\textwidth}
+    \includegraphics[width=\linewidth,height=26mm,keepaspectratio]{photo.jpg}
   \end{minipage}\hfill
-  \begin{minipage}[c]{0.78\textwidth}
+  \begin{minipage}[c]{0.76\textwidth}
     \centering
     {\LARGE\bfseries Hénoc MUKUMBI}\\[-0.2em]
     \small (+33) 7\,67\,17\,82\,93 \quad\textbullet\quad \texttt{h.mukumbi100@gmail.com} \quad\textbullet\quad
-    119 avenue du Général Leclerc, 78220 Viroflay\\[-0.1em]
-    \normalsize \textbf{Étudiant en Systèmes Embarqués à l’ESIEE Paris — Recherche apprentissage 3 ans (Diplôme 2028).}
+    119 avenue du Général Leclerc, 78220 Viroflay (France)\\[-0.1em]
+    \normalsize \textbf{Candidature — Alternant Ingénieur Bureau d’Études en Industrie}\newline
+    \small Français — Langue maternelle \quad|\quad Anglais — Niveau professionnel
   \end{minipage}
 \end{center}
 
-% \vspace{0.8em}  % <-- supprimé pour gagner de l’espace
+%----------------------------------------------------------------------------------------
+%  MOTS-CLÉS ATS
+%----------------------------------------------------------------------------------------
+\begin{center}
+  \textit{Mots-clés : Bureau d’études • Conception électronique • Innovation • Industrialisation • Méthodes • CAO électronique et mécanique • Tests et validation • Amélioration continue • Documentation technique • Fiabilité produit}
+\end{center}
 
 %----------------------------------------------------------------------------------------
-%  EXPÉRIENCE PROFESSIONNELLE
+%  EXPERIENCE
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{Expérience}
 
-  \begin{rSubsection}{LGM Ingénierie}{Août 2023 -- Août 2025}{Apprenti Développeur en Systèmes Embarqués}{Vélizy-Villacoublay}
-    \item Validation et tests couche physique sur calculateurs automobile (CAN, LIN) avec CANoe, oscilloscopes et modules de perturbation.
-    \item Intégration et débogage de logiciels embarqués (Eclipse, IBM Rational Test RealTime).
-    \item Développement et exécution de tests unitaires et sur cible en C pour des composants critiques en temps réel.
-    \item Utilisation de Fork pour la gestion de versions et le développement collaboratif en environnements de validation.
-    \item Interface web interne (Python/Django/SQL) pour automatiser les rapports, réduire le temps d’analyse et améliorer la traçabilité.
-    \item Collaboration interdisciplinaire (logiciel, validation, qualité) pour atteindre les jalons et garantir la conformité.
+  \begin{rSubsection}{LGM Ingénierie}{Août 2023 -- Août 2025}{Apprenti Ingénieur Systèmes Embarqués}{Vélizy-Villacoublay}
+    \item Études et validation de calculateurs automobiles (CAN, LIN) avec CANoe, oscilloscopes et multimètres.  
+    \item Développement et exécution de tests unitaires/sur cible en C avec IBM Rational Test RealTime.  
+    \item Participation à l’amélioration des méthodes de validation et de traçabilité qualité.  
+    \item Collaboration transverse (logiciel, validation, qualité) en environnement industriel.  
   \end{rSubsection}
 
-  \begin{rSubsection}{CNRS -- Université Paris Cité}{Avril 2023 -- Juin 2023}{Stagiaire Technicien Systèmes Embarqués et Électronique}{Paris}
-    \item Conception et routage de circuits imprimés (Ultiboard) pour instrumentation (contrôle de température, salle blanche).
-    \item Assemblage, câblage et débogage de cartes ; intégration et calibration de capteurs de température.
-    \item Développement et migration de firmware embarqué en C/C++ sur PIC18F26J11 pour la régulation en temps réel.
-    \item Réalisation et test d’une liaison RF avec modules Si4432.
+  \begin{rSubsection}{CNRS — Université Paris Cité}{Avril 2023 -- Juin 2023}{Stagiaire Technicien Bureau d’Études Électronique}{Paris}
+    \item Conception et routage de circuits imprimés (Ultiboard) pour instrumentation scientifique.  
+    \item Assemblage, réparation, calibration et intégration de cartes électroniques.  
+    \item Réalisation de tests fonctionnels et contribution à la rédaction de documentation technique.  
   \end{rSubsection}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%  FORMATION
+%  EDUCATION
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{Formation}
 
   \textbf{ESIEE Paris} \hfill \textit{2025--2028} \\
-  Diplôme d’ingénieur — Systèmes Embarqués
+  Diplôme d’ingénieur — Systèmes Embarqués (en alternance)  
 
   \textbf{Université de Technologie de Compiègne (UTC)} \hfill \textit{2023--2025} \\
-  Licence en Informatique
+  Licence en Informatique  
 
   \textbf{Université Paris-Saclay — IUT de Cachan} \hfill \textit{2021--2023} \\
-  DUT Génie Électrique et Informatique Industrielle
+  DUT Génie Électrique et Informatique Industrielle  
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%  COMPÉTENCES TECHNIQUES
+%  SKILLS
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{Compétences Techniques}
 
-  \begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l @{}}
-    Langages & C, C++, Python, VHDL, JavaScript, HTML/CSS, SQL \\
-    Embarqué & ARM Mbed, Arduino, Raspberry Pi, PIC \\
-    Protocoles & SPI, I2C, CAN, UART, Ethernet \\
-    PCB \& CAO & KiCad, Ultiboard, Altium, SolidWorks \\
-    Réseaux & TCP/IP, routage, firewall, LAN/WAN, sockets \\
-    BD \& OS & PostgreSQL, SQLite, Windows, macOS, Ubuntu \\
-    Outils & Git, GitHub, GitLab, Eclipse, LabVIEW, Matlab \\
+  \begin{tabular}{@{} >{\bfseries}l @{\hspace{3.5ex}} l @{}}
+    Bureau d’études & Analyse de besoins, conception schémas, documentation technique \\
+    Conception PCB & KiCad, Ultiboard, Altium Designer \\
+    Méthodes & Rédaction modes opératoires, amélioration continue, Lean (bases) \\
+    Tests & Oscilloscope, GBF, multimètre, analyseur logique \\
+    Développement & C, C++, Python, SQL, VHDL \\
+    CAO mécanique & SolidWorks, impression 3D \\
+    Outils & GitHub, GitLab, Eclipse, Matlab, Pack Office \\
   \end{tabular}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%  PROJETS PERSONNELS
+%  PROJECTS
 %----------------------------------------------------------------------------------------
-
 \begin{rSection}{Réalisations}
 
-  \begin{rSubsection}{Drone aérien personnalisé}{2025 - Présent}{}{}
-    \item Étude et analyse des schémas électroniques (alimentation, étage de puissance, communication) pour garantir la fiabilité et la sécurité du système.
-    \item Conception mécanique (SolidWorks, impression 3D) et intégration structurelle optimisée.
-    \item Conception électronique complète : ESC basé sur TI F280025PMS, carte de contrôle de vol conçue sous KiCad.
-    \item Intégration multi-capteurs (IMU, capteurs environnementaux, capteur optique) et développement logiciel embarqué en C++ (protocoles SPI, I2C, UART).
-    \item Validation par simulations et tests sur prototype pour assurer robustesse et performances en conditions réelles.
+  \begin{rSubsection}{Drone aérien personnalisé}{2025 -- Présent}{Projet personnel}{}
+    \item Étude des schémas électroniques (alimentation, puissance, communication).  
+    \item Développement d’une carte de contrôle moteurs (TI F280025PMS) et intégration capteurs.  
+    \item Validation sur prototype par mesures et bancs de tests.  
+  \end{rSubsection}
+
+  \begin{rSubsection}{Capteur de luminosité}{Sept. 2025 -- Présent}{Projet académique}{ESIEE Paris}
+    \item Étude des schémas et dimensionnement des composants (résistances, condensateurs).  
+    \item Début du routage PCB sous KiCad et mise en place de la documentation technique.  
   \end{rSubsection}
 
 \end{rSection}
-
-
-
-%----------------------------------------------------------------------------------------
-%  LANGUES
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Langues}
-  Français — Langue maternelle \quad|\quad Anglais — Niveau professionnel
-\end{rSection}
-
-\enlargethispage{\baselineskip}
 
 \end{document}
